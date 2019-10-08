@@ -9,7 +9,7 @@ def reply_msg(msg):
             # msg.reply(type(msg.text))
             msg.reply(u"开始识别")
             b = []
-            a="http://api.tianapi.com/txapi/lajifenlei/?key=63be040a50cf928e2c79e650fe57e7e6&word="
+            a="http://api.tianapi.com/txapi/lajifenlei/?kecf928e2c79e650fe57e7e6&word="
             laji.wenji(a,msg.text[3:],b)
             for i in b:
                 msg.reply(i)
@@ -18,7 +18,7 @@ def reply_msg(msg):
             # def repl(msg):
             #     msg.reply(u"开始识别")
             #     b=[]
-            #     a="http://api.tianapi.com/txapi/lajifenlei/?key=63be040a50cf928e2c79e650fe57e7e6&word="
+            #     a="http://api.tianapi.com/txapi/lajifenlei/?k928e2c79e650fe57e7e6&word="
             #     laji.wenji(a,msg.text[3:],b)
             #     for i in b:
             #         msg.reply(i)
