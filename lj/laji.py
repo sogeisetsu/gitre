@@ -40,7 +40,7 @@ def tupian(url,path,b):
         f = f.decode()
         # print(type(f))
         c = c + f
-        body = {"key": "63fe57e7e6", "img": c}
+        body = {"key": "63fe57e7e26", "img": c}
         headers = {'content-type': "application/x-www-form-urlencoded"}
         # url = 'http://api.tianapi.com/txapi/imglajifenlei/'
         response = requests.post(url, data=body, headers=headers)
