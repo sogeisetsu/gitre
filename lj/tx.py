@@ -11,7 +11,7 @@ if os.path.exists(f):
       f=f.decode()
       # print(type(f))
       c=c+f
-      body={"key":"63be040a50cf928e2c79e650fe57e7e6","img":c}
+      body={"key":"63","img":c}
       headers = {'content-type': "application/x-www-form-urlencoded"}
       url = 'http://api.tianapi.com/txapi/imglajifenlei/'
       response = requests.post(url, data = body, headers = headers)
