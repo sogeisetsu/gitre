@@ -25,7 +25,11 @@ def wenji(url,z,tt): # 定义输入文字函数
         tt.clear()
         tt.append("该垃圾种类没有检索到，这次检索结果是根据《上海市生活垃圾管理条例》得出的，您可以尝试重新输入垃圾种类或者查询《上海市生活垃圾管理条例》")
 
+<<<<<<< HEAD
 def tupian(url,path):
+=======
+def tupian(url,path,b):
+>>>>>>> 08c87cf3b901e7ab25376f5c34761fdf4bf42858
     import requests
     import base64
     import os
@@ -50,11 +54,21 @@ def tupian(url,path):
         # print(r)
         r = r["newslist"]
         # print(r)
+<<<<<<< HEAD
         #print("可能是以下种类：")
         for lt in r:
             # print(lt["name"])
             print("名称：{}\n 种类和处理方法：{}\n".format(lt["name"], lt["lajitip"]))
     else:
+=======
+        print("可能是以下种类：")
+        b.clear()
+        for lt in r:
+            b.append("名称：{}\n 种类和处理方法：{}\n".format(lt["name"], lt["lajitip"]))
+            print("名称：{}\n 种类和处理方法：{}\n".format(lt["name"], lt["lajitip"]))
+    else:
+        b.clear()
+>>>>>>> 08c87cf3b901e7ab25376f5c34761fdf4bf42858
         print("error")
 '''
 if __name__ == "__main__":
